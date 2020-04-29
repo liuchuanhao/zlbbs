@@ -1,0 +1,14 @@
+
+DEBUG = True
+
+#数据库配置
+
+DB_USERNAME= "root"
+DB_PASSWORD= "root"
+DB_HOST = "127.0.0.1"
+DB_PORT = "3306"
+DB_NAME= "zlbbs"
+DB_URL = "mysql+pymysql://%s:%s@%s:%s/%s?charset=utf8" % (DB_USERNAME,DB_PASSWORD,DB_HOST,DB_PORT,DB_NAME)
+
+SQLALCHEMY_DATABASE_URL = DB_URL
+SQLALCHEMY_TRACK_MODIFICATIONS = False
